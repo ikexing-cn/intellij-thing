@@ -1,36 +1,36 @@
 {
+  "publisher": "ikexing",
   "name": "intellij-thing",
   "displayName": "IntelliJ Thing",
   "version": "0.0.0",
-  "publisher": "ikexing",
   "packageManager": "pnpm@7.0.1",
   "description": "",
-  "keywords": [],
-  "homepage": "https://github.com/antfu/intellij-thing#readme",
-  "bugs": {
-    "url": "https://github.com/antfu/intellij-thing/issues"
-  },
-  "license": "MIT",
   "author": "ikexing <ikexing@qq.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/ikexing/intellij-thing#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/ikexing/intellij-thing"
   },
-  "main": "./dist/index.js",
-  "files": [
-    "dist"
-  ],
-  "sideEffects": false,
-  "engines": {
-    "vscode": "^1.65.0"
+  "bugs": {
+    "url": "https://github.com/ikexing/intellij-thing/issues"
   },
+  "keywords": [],
   "categories": [
     "Other"
   ],
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "icon": "res/icon.png",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "vscode": "^1.65.0"
+  },
   "activationEvents": [
     "*"
   ],
-  "icon": "res/icon.png",
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
     "dev": "nr build --watch",
